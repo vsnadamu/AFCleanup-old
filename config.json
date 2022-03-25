@@ -1,0 +1,234 @@
+{
+    "ba": {
+        "uri": "https://ubit-artifactory-ba.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "ba-dev": {
+        "uri": "https://ba-next-af.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "ba-dev-n1": {
+        "uri": "http://inlapp413.iind.intel.com:8001/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "ba-dev-n2": {
+        "uri": "http://inlapp414.iind.intel.com:8001/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "ba-n1": {
+        "uri": "https://af01p-ba-app05.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "ba-n2": {
+        "uri": "https://af01p-ba-app04.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "fm": {
+        "uri": "https://af01p-fm.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "fm-next-test": {
+        "uri": "https://af01p-fm-app06.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "maria3001-lb-fm6-in.iglb.intel.com",
+            "port": "3307",
+            "database": "artdb_preprod",
+            "auth": [
+                "artdb_preprod_so",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": false
+        },
+        "included-repos": [
+            "Test1",
+            "Test2"
+        ],
+        "excluded-repos": []
+    },
+    "fm-next-test-sav": {
+        "uri": "https://fm-next-af.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "maria3001-lb-fm6-in.iglb.intel.com",
+            "port": "3307",
+            "database": "artdb_preprod",
+            "auth": [
+                "artdb_preprod_so",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": false
+        },
+        "included-repos": [
+            "Test1",
+            "Test2"
+        ],
+        "excluded-repos": []
+    },
+    "ir": {
+        "uri": "https://af01p-ir.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "ir1safdb001.ir.intel.com",
+            "port": "3306",
+            "database": "artdb",
+            "auth": [
+                "dtartifactory",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": false
+        },
+        "included-repos": [
+            "pse-thb-sh-local",
+            "fiv-sip-validation-local",
+            "DEG-IFWI-LOCAL",
+            "sed-dgn-local",
+            "icg-sh-local"
+        ],
+        "excluded-repos": []
+    },
+    "is": {
+        "uri": "https://ubit-artifactory-il.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "isis006.iil.intel.com",
+            "standby_host": "isis007.iil.intel.com",
+            "port": "3306",
+            "database": "artdb",
+            "auth": [
+                "dtartifactory",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": true
+        },
+        "included-repos": [
+            "test-is-local","SFIP-Release-Official-local", "DEG-IFWI-LOCAL", "AIPG-Inference-local", "icg-il-local", "wcd-binaries-local", "wcd-binaries-local"
+        ],
+        "excluded-repos": []
+    },
+    "or1": {
+        "uri": "https://ubit-artifactory-or.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "plxs1806.pdx.intel.com",
+            "port": "3320",
+            "database": "artdb",
+            "auth": [
+                "dtartifactory",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": true
+        },
+        "included-repos": [
+            "Test1",
+            "Test2"
+        ],
+        "excluded-repos": []
+    },
+    "or1-n1": {
+        "uri": "https://plxs1800.pdx.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "or1-n2": {
+        "uri": "https://plxs1801.pdx.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "or2": {
+        "uri": "https://af02p-or.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    },
+    "pg": {
+        "uri": "https://af01p-png.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "maria3064-lb-pg-in.dbaas.intel.com",
+            "port": "3307",
+            "database": "Artifactory_PNG",
+            "auth": [
+                "Artifactory_PNG_so",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": false
+        }
+    },
+    "sh": {
+        "uri": "https://ubit-artifactory-sh.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "KEYRING:SYS_ARTIFACT"
+        ],
+        "database": {
+            "primary_host": "sh1safdb001.sh.intel.com",
+            "port": "3306",
+            "database": "artdb",
+            "auth": [
+                "dtartifactory",
+                "KEYRING:DB_PASSWORD"
+            ],
+            "ssl_disabled": false
+        },
+        "included-repos": [
+            "pse-thb-sh-local",
+            "fiv-sip-validation-local",
+            "DEG-IFWI-LOCAL",
+            "sed-dgn-local",
+            "icg-sh-local"
+        ],
+        "excluded-repos": []
+    },
+    "uat": {
+        "uri": "https://ubit-artifactory-uat.devtools.intel.com/artifactory",
+        "auth": [
+            "sys_artifact",
+            "ENV:SYS_ARTIFACT_PASSWORD"
+        ]
+    }
+}

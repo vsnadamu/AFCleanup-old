@@ -1,0 +1,107 @@
+{
+  "TestConfig1": {
+    "instance": "fm-next-test",
+    "repo": "Test1",
+    "artifacts": [
+      {
+        "node_path":  "Folder02",
+        "node_name":  "case1.txt",
+        "created":    "19.8",
+        "modified":   "15",
+        "updated":    "12",
+        "downloaded": "",
+        "retention_days": "10"
+      },
+      {
+        "node_path":  "Folder02",
+        "node_name":  "case2.txt",
+        "created":    "19.8",
+        "modified":   "15",
+        "updated":    "9.5",
+        "downloaded": "10",
+        "retention_days": "10",
+        "purge_candidate": "N"
+      },
+      {
+        "node_path":  "Folder02",
+        "node_name":  "case3.txt",
+        "created":    "9.8",
+        "modified":   "6.9",
+        "updated":    "6.9",
+        "downloaded": "7.9",
+        "retention_days": "7",
+        "purge_candidate": "N"
+      },
+      {
+        "node_path":  "Folder02",
+        "node_name":  "case4.txt",
+        "created":    "9.8",
+        "modified":   "8",
+        "updated":    "8",
+        "downloaded": "8",
+        "retention_days": "7"
+      },
+      {
+        "node_path":  "Folder01",
+        "node_name":  "case1.txt",
+        "created":    "9",
+        "modified":   "7.5",
+        "updated":    "7.1",
+        "downloaded": "7.8",
+        "retention_days": "7",
+        "purge_candidate": "N"
+      },
+      {
+        "node_path":  "Folder01",
+        "node_name":  "case2.txt",
+        "created":    "6",
+        "modified":   "6.7",
+        "updated":    "5",
+        "downloaded": "",
+        "retention_days": "7",
+        "purge_candidate": "N"
+      },
+      {
+        "node_path":  "Folder01",
+        "node_name":  "case3.txt",
+        "created":    "6",
+        "modified":   "6.7",
+        "updated":    "5",
+        "downloaded": "",
+        "retention_days": "",
+        "retention_pinned": "3",
+        "purge_candidate": "N"
+      },
+      {
+        "node_path":  "Folder01",
+        "node_name":  "case4.txt",
+        "created":    "6",
+        "modified":   "6.7",
+        "updated":    "5",
+        "downloaded": "",
+        "retention_days": "7",
+        "retention_pinned": "3",
+        "purge_candidate": "N"
+      },
+      {
+        "node_path":  "Folder03/DIR1/DIR2/DIR3/DIR4/DIR5/DIR6",
+        "node_name":  "case2.txt",
+        "created":    "6",
+        "modified":   "6.7",
+        "updated":    "5",
+        "downloaded": "",
+        "retention_days": "4"
+      },
+      {
+        "node_path":  "Folder03/DIR1/DIR2/DIR3",
+        "node_name":  "case3.txt",
+        "created":    "6",
+        "modified":   "6.7",
+        "updated":    "5",
+        "downloaded": "",
+        "retention_days": "3"
+      }
+
+    ]
+  }
+}
